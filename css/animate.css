@@ -1,0 +1,1883 @@
+/*===========================================================================================
+
+								Animate
+
+=============================================================================================*/
+/* IMAGE HOVER */
+/* line 9, ../sass/animate.scss */
+.image-hover * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/animate.scss */
+.image-hover {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background: #000;
+  border: 10px solid #fff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 19, ../sass/animate.scss */
+.image-hover img {
+  display: block;
+}
+
+/* line 20, ../sass/animate.scss */
+.image-hover a {
+  text-decoration: none;
+}
+
+/* line 22, ../sass/animate.scss */
+.image-pos {
+  width: 450px;
+  height: 200px;
+}
+
+/* line 23, ../sass/animate.scss */
+.image-pos img {
+  margin: -100px 0px 0px -100px;
+}
+
+/*** effect zoom in ***/
+/* line 28, ../sass/animate.scss */
+.img-zoom-in img {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/* line 37, ../sass/animate.scss */
+.img-zoom-in:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/*** effect zoom out ***/
+/* line 48, ../sass/animate.scss */
+.img-zoom-out img {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/* line 57, ../sass/animate.scss */
+.img-zoom-out:hover img {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+
+/*** effect rotate right ***/
+/* line 68, ../sass/animate.scss */
+.img-rotate-right img {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/* line 77, ../sass/animate.scss */
+.img-rotate-right:hover img {
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+}
+
+/*** effect rotate left ***/
+/* line 88, ../sass/animate.scss */
+.img-rotate-left img {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/* line 97, ../sass/animate.scss */
+.img-rotate-left:hover img {
+  transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+}
+
+/*** effect layer hover - black ***/
+/* line 107, ../sass/animate.scss */
+.img-layer-hover .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: #000;
+  opacity: 0;
+}
+
+/* line 108, ../sass/animate.scss */
+.img-layer-hover:hover .layer {
+  opacity: 0.7;
+}
+
+/* line 111, ../sass/animate.scss */
+.img-layer-hover .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 120, ../sass/animate.scss */
+.img-layer-hover:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer-image hover - black ***/
+/* line 130, ../sass/animate.scss */
+.img-layer-image-hover .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  background-color: #000;
+  background-image: url("../img/lupe.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 131, ../sass/animate.scss */
+.img-layer-image-hover:hover .layer {
+  opacity: 0.7;
+  background-color: #000;
+  background-image: url("../img/lupe.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 134, ../sass/animate.scss */
+.img-layer-image-hover .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 143, ../sass/animate.scss */
+.img-layer-image-hover:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer-text hover - black ***/
+/* line 153, ../sass/animate.scss */
+.img-layer-text-hover .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 13px;
+}
+
+/* line 154, ../sass/animate.scss */
+.img-layer-text-hover:hover .layer {
+  opacity: 0.7;
+}
+
+/* line 155, ../sass/animate.scss */
+.img-layer-text-hover .layer-text {
+  padding: 20px;
+}
+
+/* line 157, ../sass/animate.scss */
+.img-layer-text-hover.overflow .layer {
+  overflow: auto;
+}
+
+/* line 160, ../sass/animate.scss */
+.img-layer-text-hover .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 169, ../sass/animate.scss */
+.img-layer-text-hover:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer hover - white ***/
+/* line 179, ../sass/animate.scss */
+.img-layer-hover-2 .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: #fff;
+  opacity: 0;
+}
+
+/* line 180, ../sass/animate.scss */
+.img-layer-hover-2:hover .layer {
+  opacity: 0.7;
+}
+
+/* line 183, ../sass/animate.scss */
+.img-layer-hover-2 .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 192, ../sass/animate.scss */
+.img-layer-hover-2:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer-image hover - white ***/
+/* line 202, ../sass/animate.scss */
+.img-layer-image-hover-2 .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  background-color: #fff;
+  background-image: url("../img/lupe-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 203, ../sass/animate.scss */
+.img-layer-image-hover-2:hover .layer {
+  opacity: 0.7;
+  background-color: #fff;
+  background-image: url("../img/lupe-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 206, ../sass/animate.scss */
+.img-layer-image-hover-2 .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 215, ../sass/animate.scss */
+.img-layer-image-hover-2:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer slide - top to bottom ***/
+/* line 225, ../sass/animate.scss */
+.img-layer-slide-top-bottom .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 100%;
+  left: 0px;
+  background: #000;
+  opacity: 0;
+}
+
+/* line 226, ../sass/animate.scss */
+.img-layer-slide-top-bottom:hover .layer {
+  opacity: 0.7;
+  bottom: 0%;
+}
+
+/* line 229, ../sass/animate.scss */
+.img-layer-slide-top-bottom .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 238, ../sass/animate.scss */
+.img-layer-slide-top-bottom:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer slide - bottom to top ***/
+/* line 248, ../sass/animate.scss */
+.img-layer-slide-bottom-top .layer {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: #000;
+  opacity: 0;
+}
+
+/* line 249, ../sass/animate.scss */
+.img-layer-slide-bottom-top:hover .layer {
+  opacity: 0.7;
+  top: 0%;
+}
+
+/* line 252, ../sass/animate.scss */
+.img-layer-slide-bottom-top .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 261, ../sass/animate.scss */
+.img-layer-slide-bottom-top:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer slide - left to right ***/
+/* line 271, ../sass/animate.scss */
+.img-layer-slide-left-right .layer {
+  position: absolute;
+  top: 0px;
+  right: 100%;
+  bottom: 0px;
+  left: 0px;
+  background: #000;
+  opacity: 0;
+}
+
+/* line 272, ../sass/animate.scss */
+.img-layer-slide-left-right:hover .layer {
+  opacity: 0.7;
+  right: 0%;
+}
+
+/* line 275, ../sass/animate.scss */
+.img-layer-slide-left-right .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 284, ../sass/animate.scss */
+.img-layer-slide-left-right:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer slide - right to left ***/
+/* line 294, ../sass/animate.scss */
+.img-layer-slide-right-left .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 100%;
+  background: #000;
+  opacity: 0;
+}
+
+/* line 295, ../sass/animate.scss */
+.img-layer-slide-right-left:hover .layer {
+  opacity: 0.7;
+  left: 0%;
+}
+
+/* line 298, ../sass/animate.scss */
+.img-layer-slide-right-left .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 307, ../sass/animate.scss */
+.img-layer-slide-right-left:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect origin ***/
+/* line 318, ../sass/animate.scss */
+.img-origin {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/* line 327, ../sass/animate.scss */
+.img-origin:hover {
+  transform: skew(10deg);
+  transform-origin: top left;
+  -webkit-transform: skew(10deg);
+  -webkit-transform-origin: left;
+  -moz-transform: skew(10deg);
+  -moz-transform-origin: top left;
+  -ms-transform: skew(10deg);
+  -ms-transform-origin: top left;
+  -o-transform: skew(10deg);
+  -o-transform-origin: top left;
+}
+
+/*** effect square to ellipse ***/
+/* line 342, ../sass/animate.scss */
+.img-square-ellipse {
+  width: 300px;
+  height: 200px;
+}
+
+/* line 343, ../sass/animate.scss */
+.img-square-ellipse:hover {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 346, ../sass/animate.scss */
+.img-square-ellipse {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/* line 355, ../sass/animate.scss */
+.img-square-ellipse:hover {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/*** effect ellipse to square ***/
+/* line 365, ../sass/animate.scss */
+.img-ellipse-square {
+  width: 300px;
+  height: 200px;
+}
+
+/* line 366, ../sass/animate.scss */
+.img-ellipse-square {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 367, ../sass/animate.scss */
+.img-ellipse-square:hover {
+  -moz-border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -o-border-radius: 0%;
+  border-radius: 0%;
+}
+
+/* line 370, ../sass/animate.scss */
+.img-ellipse-square {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/* line 379, ../sass/animate.scss */
+.img-ellipse-square:hover {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/*** effect square to round ***/
+/* line 390, ../sass/animate.scss */
+.img-square-round {
+  width: 200px;
+  height: 200px;
+}
+
+/* line 391, ../sass/animate.scss */
+.img-square-round:hover {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 394, ../sass/animate.scss */
+.img-square-round {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/* line 403, ../sass/animate.scss */
+.img-square-round:hover {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/*** effect round to square ***/
+/* line 413, ../sass/animate.scss */
+.img-round-square {
+  width: 200px;
+  height: 200px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+/* line 414, ../sass/animate.scss */
+.img-round-square:hover {
+  -moz-border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -o-border-radius: 0%;
+  border-radius: 0%;
+}
+
+/* line 417, ../sass/animate.scss */
+.img-round-square {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/* line 426, ../sass/animate.scss */
+.img-round-square:hover {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/*** effect layer-image hover - background change ***/
+/* line 436, ../sass/animate.scss */
+.img-layer-image-hover-backgroundchange .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  background-color: #000;
+  background-image: url("../img/lupe.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 437, ../sass/animate.scss */
+.img-layer-image-hover-backgroundchange:hover .layer {
+  opacity: 0.5;
+  background-color: #fff;
+  background-image: url("../img/lupe-2.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 440, ../sass/animate.scss */
+.img-layer-image-hover-backgroundchange .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 449, ../sass/animate.scss */
+.img-layer-image-hover-backgroundchange:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect rotate-scale ***/
+/* line 460, ../sass/animate.scss */
+.img-rotate-scale {
+  transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+}
+
+/* line 469, ../sass/animate.scss */
+.img-rotate-scale:hover {
+  transform: rotate(720deg) scale(2, 2);
+  -webkit-transform: rotate(720deg) scale(2, 2);
+  -moz-transform: rotate(720deg) scale(2, 2);
+  -ms-transform: rotate(720deg) scale(2, 2);
+  -o-transform: rotate(720deg) scale(2, 2);
+}
+
+/*** effect rotate-x ***/
+/* line 480, ../sass/animate.scss */
+.img-rotate-x {
+  transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+}
+
+/* line 489, ../sass/animate.scss */
+.img-rotate-x:hover {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+
+/*** effect rotate-y ***/
+/* line 500, ../sass/animate.scss */
+.img-rotate-y {
+  transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+}
+
+/* line 509, ../sass/animate.scss */
+.img-rotate-y:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+/*** effect rotate-z ***/
+/* line 520, ../sass/animate.scss */
+.img-rotate-z {
+  transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+}
+
+/* line 529, ../sass/animate.scss */
+.img-rotate-z:hover {
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);
+  -ms-transform: rotateZ(180deg);
+  -o-transform: rotateZ(180deg);
+}
+
+/*** effect 3d image change ***/
+/* line 539, ../sass/animate.scss */
+.imagechange-3d {
+  background: #000;
+}
+
+/* line 540, ../sass/animate.scss */
+.imagechange-3d-inner {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* line 542, ../sass/animate.scss */
+.imagechange-3d .imgchange-1 {
+  opacity: 1;
+}
+
+/* line 543, ../sass/animate.scss */
+.imagechange-3d:hover .imgchange-1 {
+  opacity: 0;
+}
+
+/* line 544, ../sass/animate.scss */
+.imagechange-3d .imgchange-2 {
+  opacity: 0;
+}
+
+/* line 545, ../sass/animate.scss */
+.imagechange-3d:hover .imgchange-2 {
+  opacity: 1;
+}
+
+/* line 547, ../sass/animate.scss */
+.imgchange-1 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* line 548, ../sass/animate.scss */
+.imgchange-2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  color: #fff;
+  background: #000;
+  font-size: 13px;
+}
+
+/* line 551, ../sass/animate.scss */
+.imagechange-3d div {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+/* line 560, ../sass/animate.scss */
+.imagechange-3d {
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  -o-perspective: 1000px;
+}
+
+/* line 569, ../sass/animate.scss */
+.imagechange-3d-inner {
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: all 1.0s linear;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: all 1.0s linear;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: all 1.0s linear;
+  -o-transform-style: preserve-3d;
+  -o-transition: all 1.0s linear;
+}
+
+/* line 583, ../sass/animate.scss */
+.imagechange-3d:hover .imagechange-3d-inner {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+/* line 592, ../sass/animate.scss */
+.imgchange-2 {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+/*** effect sharp to blur ***/
+/* line 603, ../sass/animate.scss */
+.img-sharp-blur img {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+/* line 612, ../sass/animate.scss */
+.img-sharp-blur:hover img {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: url(blur.svg#blur);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+}
+
+/*** effect color to grayscale ***/
+/* line 624, ../sass/animate.scss */
+.img-color-grayscale img {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+/* line 633, ../sass/animate.scss */
+.img-color-grayscale:hover img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url(greyscale.svg#greyscale);
+  filter: gray;
+}
+
+/*** effect inner-shadow ***/
+/* line 645, ../sass/animate.scss */
+.img-inner-shadow .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* line 648, ../sass/animate.scss */
+.img-inner-shadow:hover .layer {
+  box-shadow: inset 0px 0px 120px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: inset 0px 0px 120px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: inset 0px 0px 120px rgba(0, 0, 0, 0.9);
+}
+
+/* line 655, ../sass/animate.scss */
+.img-inner-shadow .layer {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+/* line 664, ../sass/animate.scss */
+.img-inner-shadow:hover .layer {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+/*** effect inner-shadow 2 ***/
+/* line 674, ../sass/animate.scss */
+.img-inner-shadow-2 .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* line 677, ../sass/animate.scss */
+.img-inner-shadow-2:hover .layer {
+  box-shadow: inset 0px 0px 120px rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: inset 0px 0px 120px rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: inset 0px 0px 120px rgba(255, 255, 255, 0.9);
+}
+
+/* line 684, ../sass/animate.scss */
+.img-inner-shadow-2 .layer {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+/* line 693, ../sass/animate.scss */
+.img-inner-shadow-2:hover .layer {
+  transition: all 0.6s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  -ms-transition: all 0.6s ease-in-out;
+  -o-transition: all 0.6s ease-in-out;
+}
+
+/*** effect layer-title slide-top hover ***/
+/* line 703, ../sass/animate.scss */
+.img-layer-title-slide-top-hover .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  background-color: #000;
+  text-align: center;
+}
+
+/* line 704, ../sass/animate.scss */
+.img-layer-title-slide-top-hover:hover .layer {
+  opacity: 0.7;
+}
+
+/* line 706, ../sass/animate.scss */
+.img-layer-title-slide-top-hover .layer-text {
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  left: 0px;
+  padding: 8px 15px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+}
+
+/* line 707, ../sass/animate.scss */
+.img-layer-title-slide-top-hover:hover .layer-text {
+  position: absolute;
+  top: 0px;
+}
+
+/* line 710, ../sass/animate.scss */
+.img-layer-title-slide-top-hover .layer, .img-layer-title-slide-top-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 719, ../sass/animate.scss */
+.img-layer-title-slide-top-hover:hover .layer, .img-layer-title-slide-top-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer-title slide-bottom hover ***/
+/* line 729, ../sass/animate.scss */
+.img-layer-title-slide-bottom-hover .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  background-color: #000;
+  text-align: center;
+}
+
+/* line 730, ../sass/animate.scss */
+.img-layer-title-slide-bottom-hover:hover .layer {
+  opacity: 0.7;
+}
+
+/* line 732, ../sass/animate.scss */
+.img-layer-title-slide-bottom-hover .layer-text {
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+  left: 0px;
+  padding: 8px 15px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+}
+
+/* line 733, ../sass/animate.scss */
+.img-layer-title-slide-bottom-hover:hover .layer-text {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 736, ../sass/animate.scss */
+.img-layer-title-slide-bottom-hover .layer, .img-layer-title-slide-bottom-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 745, ../sass/animate.scss */
+.img-layer-title-slide-bottom-hover:hover .layer, .img-layer-title-slide-bottom-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer-title slide-topbottom hover ***/
+/* line 755, ../sass/animate.scss */
+.img-layer-title-slide-topbottom-hover .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  background-color: #000;
+  text-align: center;
+}
+
+/* line 756, ../sass/animate.scss */
+.img-layer-title-slide-topbottom-hover:hover .layer {
+  opacity: 0.7;
+}
+
+/* line 758, ../sass/animate.scss */
+.img-layer-title-slide-topbottom-hover .layer-text {
+  position: absolute;
+  bottom: 100%;
+  right: 0px;
+  left: 0px;
+  padding: 8px 15px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+}
+
+/* line 759, ../sass/animate.scss */
+.img-layer-title-slide-topbottom-hover:hover .layer-text {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 762, ../sass/animate.scss */
+.img-layer-title-slide-topbottom-hover .layer, .img-layer-title-slide-topbottom-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 771, ../sass/animate.scss */
+.img-layer-title-slide-topbottom-hover:hover .layer, .img-layer-title-slide-topbottom-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer-title slide-bottomtop hover ***/
+/* line 781, ../sass/animate.scss */
+.img-layer-title-slide-bottomtop-hover .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  background-color: #000;
+  text-align: center;
+}
+
+/* line 782, ../sass/animate.scss */
+.img-layer-title-slide-bottomtop-hover:hover .layer {
+  opacity: 0.7;
+}
+
+/* line 784, ../sass/animate.scss */
+.img-layer-title-slide-bottomtop-hover .layer-text {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  left: 0px;
+  padding: 8px 15px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+}
+
+/* line 785, ../sass/animate.scss */
+.img-layer-title-slide-bottomtop-hover:hover .layer-text {
+  position: absolute;
+  top: 0px;
+}
+
+/* line 788, ../sass/animate.scss */
+.img-layer-title-slide-bottomtop-hover .layer, .img-layer-title-slide-bottomtop-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 797, ../sass/animate.scss */
+.img-layer-title-slide-bottomtop-hover:hover .layer, .img-layer-title-slide-bottomtop-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer-title-center hover ***/
+/* line 807, ../sass/animate.scss */
+.img-layer-title-center-hover .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0;
+  background-color: #000;
+  text-align: center;
+}
+
+/* line 808, ../sass/animate.scss */
+.img-layer-title-center-hover:hover .layer {
+  opacity: 0.7;
+}
+
+/* line 809, ../sass/animate.scss */
+.img-layer-title-center-hover .layer-text {
+  margin-top: 30px;
+  padding: 8px 15px;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  display: inline-block;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 813, ../sass/animate.scss */
+.img-layer-title-center-hover .layer {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 822, ../sass/animate.scss */
+.img-layer-title-center-hover:hover .layer {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer-panel hover - bottom to top ***/
+/* line 832, ../sass/animate.scss */
+.img-panel-bottomtop-hover .layer-text {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  left: 0px;
+  opacity: 0.7;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+}
+
+/* line 833, ../sass/animate.scss */
+.img-panel-bottomtop-hover:hover .layer-text {
+  position: absolute;
+  top: 0px;
+}
+
+/* line 835, ../sass/animate.scss */
+.img-panel-bottomtop-hover .layer-text a {
+  display: inline-block;
+  width: 50%;
+  padding: 8px 0px;
+  text-align: center;
+  font-size: 13px;
+  color: #4588da;
+}
+
+/* line 836, ../sass/animate.scss */
+.img-panel-bottomtop-hover .layer-text a:hover {
+  background: #4588da;
+  color: #fff;
+}
+
+/* line 839, ../sass/animate.scss */
+.img-panel-bottomtop-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 848, ../sass/animate.scss */
+.img-panel-bottomtop-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect layer-panel hover - top to bottom ***/
+/* line 858, ../sass/animate.scss */
+.img-panel-topbottom-hover .layer-text {
+  position: absolute;
+  bottom: 100%;
+  right: 0px;
+  left: 0px;
+  opacity: 0.7;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+}
+
+/* line 859, ../sass/animate.scss */
+.img-panel-topbottom-hover:hover .layer-text {
+  position: absolute;
+  bottom: 0px;
+}
+
+/* line 861, ../sass/animate.scss */
+.img-panel-topbottom-hover .layer-text a {
+  display: inline-block;
+  width: 50%;
+  padding: 8px 0px;
+  text-align: center;
+  font-size: 13px;
+  color: #4588da;
+}
+
+/* line 862, ../sass/animate.scss */
+.img-panel-topbottom-hover .layer-text a:hover {
+  background: #4588da;
+  color: #fff;
+}
+
+/* line 865, ../sass/animate.scss */
+.img-panel-topbottom-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 874, ../sass/animate.scss */
+.img-panel-topbottom-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect left content hover - right to left ***/
+/* line 884, ../sass/animate.scss */
+.img-left-content-rightleft-hover .layer-text {
+  position: absolute;
+  left: 100%;
+  top: 0px;
+  bottom: 0px;
+  width: 0%;
+  padding: 20px;
+  opacity: 0;
+  background: #fff;
+  color: #000;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* line 885, ../sass/animate.scss */
+.img-left-content-rightleft-hover:hover .layer-text {
+  position: absolute;
+  left: 0px;
+  width: 50%;
+  opacity: 0.7;
+}
+
+/* line 887, ../sass/animate.scss */
+.img-left-content-rightleft-hover .layer-text h2 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* line 889, ../sass/animate.scss */
+.img-left-content-rightleft-hover .layer-text a {
+  display: inline-block;
+  padding: 8px 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  background: #4588da;
+  color: #fff;
+}
+
+/* line 890, ../sass/animate.scss */
+.img-left-content-rightleft-hover .layer-text a:hover {
+  background: #8ac748;
+  color: #fff;
+}
+
+/* line 892, ../sass/animate.scss */
+.img-left-content-rightleft-hover .text-inner {
+  padding: 8px 0px;
+}
+
+/* line 895, ../sass/animate.scss */
+.img-left-content-rightleft-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 904, ../sass/animate.scss */
+.img-left-content-rightleft-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect left content hover - left to right ***/
+/* line 914, ../sass/animate.scss */
+.img-left-content-leftright-hover .layer-text {
+  position: absolute;
+  right: 120%;
+  top: 0px;
+  bottom: 0px;
+  width: 0%;
+  padding: 20px;
+  opacity: 0;
+  background: #fff;
+  color: #000;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* line 915, ../sass/animate.scss */
+.img-left-content-leftright-hover:hover .layer-text {
+  position: absolute;
+  right: 0px;
+  width: 50%;
+  opacity: 0.7;
+}
+
+/* line 917, ../sass/animate.scss */
+.img-left-content-leftright-hover .layer-text h2 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* line 919, ../sass/animate.scss */
+.img-left-content-leftright-hover .layer-text a {
+  display: inline-block;
+  padding: 8px 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  background: #4588da;
+  color: #fff;
+}
+
+/* line 920, ../sass/animate.scss */
+.img-left-content-leftright-hover .layer-text a:hover {
+  background: #8ac748;
+  color: #fff;
+}
+
+/* line 922, ../sass/animate.scss */
+.img-left-content-leftright-hover .text-inner {
+  padding: 8px 0px;
+}
+
+/* line 925, ../sass/animate.scss */
+.img-left-content-leftright-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 934, ../sass/animate.scss */
+.img-left-content-leftright-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect left content hover - top to bottom ***/
+/* line 944, ../sass/animate.scss */
+.img-left-content-topbottom-hover .layer-text {
+  position: absolute;
+  bottom: 100%;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  background: #fff;
+  color: #000;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* line 945, ../sass/animate.scss */
+.img-left-content-topbottom-hover:hover .layer-text {
+  position: absolute;
+  bottom: 0px;
+  opacity: 0.7;
+}
+
+/* line 947, ../sass/animate.scss */
+.img-left-content-topbottom-hover .layer-text h2 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* line 949, ../sass/animate.scss */
+.img-left-content-topbottom-hover .layer-text a {
+  display: inline-block;
+  padding: 8px 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  background: #4588da;
+  color: #fff;
+}
+
+/* line 950, ../sass/animate.scss */
+.img-left-content-topbottom-hover .layer-text a:hover {
+  background: #8ac748;
+  color: #fff;
+}
+
+/* line 952, ../sass/animate.scss */
+.img-left-content-topbottom-hover .text-inner {
+  padding: 8px 0px;
+}
+
+/* line 955, ../sass/animate.scss */
+.img-left-content-topbottom-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 964, ../sass/animate.scss */
+.img-left-content-topbottom-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect left content hover - bottom top top ***/
+/* line 974, ../sass/animate.scss */
+.img-left-content-bottomtop-hover .layer-text {
+  position: absolute;
+  top: 100%;
+  right: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  background: #fff;
+  color: #000;
+  font-size: 13px;
+  text-align: left;
+}
+
+/* line 975, ../sass/animate.scss */
+.img-left-content-bottomtop-hover:hover .layer-text {
+  position: absolute;
+  top: 0px;
+  opacity: 0.7;
+}
+
+/* line 977, ../sass/animate.scss */
+.img-left-content-bottomtop-hover .layer-text h2 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+/* line 979, ../sass/animate.scss */
+.img-left-content-bottomtop-hover .layer-text a {
+  display: inline-block;
+  padding: 8px 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  background: #4588da;
+  color: #fff;
+}
+
+/* line 980, ../sass/animate.scss */
+.img-left-content-bottomtop-hover .layer-text a:hover {
+  background: #8ac748;
+  color: #fff;
+}
+
+/* line 982, ../sass/animate.scss */
+.img-left-content-bottomtop-hover .text-inner {
+  padding: 8px 0px;
+}
+
+/* line 985, ../sass/animate.scss */
+.img-left-content-bottomtop-hover .layer-text {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 994, ../sass/animate.scss */
+.img-left-content-bottomtop-hover:hover .layer-text {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect - image opacity ***/
+/* line 1004, ../sass/animate.scss */
+.img-opacity img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* line 1006, ../sass/animate.scss */
+.img-opacity .img-1 {
+  opacity: 1;
+}
+
+/* line 1007, ../sass/animate.scss */
+.img-opacity .img-2 {
+  opacity: 0;
+}
+
+/* line 1008, ../sass/animate.scss */
+.img-opacity:hover .img-1 {
+  opacity: 0;
+}
+
+/* line 1009, ../sass/animate.scss */
+.img-opacity:hover .img-2 {
+  opacity: 1;
+}
+
+/* line 1012, ../sass/animate.scss */
+.img-opacity img {
+  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+}
+
+/* line 1021, ../sass/animate.scss */
+.img-opacity:hover img {
+  transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+}
+
+/*** effect - image roll ***/
+/* line 1031, ../sass/animate.scss */
+.img-roll {
+  background: #000;
+}
+
+/* line 1032, ../sass/animate.scss */
+.img-roll img {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* line 1034, ../sass/animate.scss */
+.img-roll .img-1 {
+  left: 0px;
+}
+
+/* line 1035, ../sass/animate.scss */
+.img-roll .img-2 {
+  left: 123%;
+}
+
+/* line 1036, ../sass/animate.scss */
+.img-roll:hover .img-1 {
+  left: 123%;
+}
+
+/* line 1037, ../sass/animate.scss */
+.img-roll:hover .img-2 {
+  left: 0px;
+}
+
+/* line 1040, ../sass/animate.scss */
+.img-roll img {
+  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+}
+
+/* line 1049, ../sass/animate.scss */
+.img-roll:hover img {
+  transition: all 1.2s ease-in-out;
+  -webkit-transition: all 1.2s ease-in-out;
+  -moz-transition: all 1.2s ease-in-out;
+  -ms-transition: all 1.2s ease-in-out;
+  -o-transition: all 1.2s ease-in-out;
+}
+
+/*** effect - shadow 1 ***/
+/* line 1061, ../sass/animate.scss */
+.img-shadow-1 {
+  -webkit-box-shadow: 0 28px 16px -26px black;
+  -moz-box-shadow: 0 28px 16px -26px black;
+  box-shadow: 0 28px 16px -26px black;
+}
+
+/* line 1068, ../sass/animate.scss */
+.img-shadow-1:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-box-shadow: 0 58px 36px -56px black;
+  -moz-box-shadow: 0 58px 36px -56px black;
+  box-shadow: 0 58px 36px -56px black;
+}
+
+/* line 1081, ../sass/animate.scss */
+.img-shadow-1 {
+  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+}
+
+/* line 1090, ../sass/animate.scss */
+.img-shadow-1:hover {
+  transition: all .6s ease-in-out;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -ms-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
+}
+
+/*** button-hover ***/
+/* line 1100, ../sass/animate.scss */
+.img-button-hover .layer {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+}
+
+/* line 1102, ../sass/animate.scss */
+.img-button-hover:hover a {
+  opacity: 0.7;
+}
+
+/* line 1104, ../sass/animate.scss */
+.img-button-hover a {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-top: 12%;
+  margin-left: 2px;
+  margin-right: 2px;
+  background: #e71a6e;
+  color: #fff;
+  font-weight: bold;
+  opacity: 0;
+  padding-top: 38px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 1107, ../sass/animate.scss */
+.img-button-hover a:hover {
+  background: #f14d90;
+}
+
+/* line 1110, ../sass/animate.scss */
+.img-button-hover a {
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+/* line 1119, ../sass/animate.scss */
+.img-button-hover:hover a {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+
+/*** effect round button 2 ***/
+/* line 1129, ../sass/animate.scss */
+.button-effect-2.img-button-hover a {
+  margin-top: 0px;
+}
+
+/* line 1130, ../sass/animate.scss */
+.button-effect-2.img-button-hover:hover a {
+  margin-top: 12%;
+}
+
+/*** effect round button 3 ***/
+/* line 1134, ../sass/animate.scss */
+.button-effect-3.img-button-hover a {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+
+/* line 1135, ../sass/animate.scss */
+.button-effect-3.img-button-hover:hover a {
+  margin-top: 12%;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
+
+/*** effect round button 4 ***/
+/* line 1139, ../sass/animate.scss */
+.button-effect-4.img-button-hover a {
+  margin-top: 0px;
+}
+
+/* line 1140, ../sass/animate.scss */
+.button-effect-4.img-button-hover:hover a {
+  margin-top: 12%;
+}
+
+/* line 1142, ../sass/animate.scss */
+.button-effect-4.img-button-hover:hover a:hover {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}

@@ -1,0 +1,144 @@
+/*===========================================================================================
+
+								Global
+
+=============================================================================================*/
+
+* {
+    text-rendering: optimizelegibility;
+}
+
+body {
+    background-color: #000;
+    background-image: url('../img/bg.jpg');
+    background-attachment:fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    margin-top: 0;
+}
+
+/*===========================================================================================
+
+								Header
+
+=============================================================================================*/
+
+
+
+header {
+    position:fixed;
+    z-index:99999;
+    width:100%;
+    background-color: rgba( 0, 0, 0,0.85 );
+    box-shadow: 0 0 5px rgba(250,250,250,.15);
+    -webkit-box-shadow: 0 0 5px rgba(250,250,250,.15);
+    -moz-box-shadow: 0 0 5px rgba(250,250,250,.15);
+    padding:5px 0;
+    .navbar {
+        background:none;
+        border:none;
+        padding:0;
+        margin:0;
+    }
+    .navbar-default {
+        .navbar-nav {    
+            li {
+                a {
+                    color:#fff;
+                    transition:All 1s ease;
+                    -webkit-transition:All .2s ease;
+                    -moz-transition:All .2s ease;
+                    -o-transition:All .2s ease;
+                }
+            }
+        }
+    }
+}
+
+
+/*===========================================================================================
+
+								Sections
+
+=============================================================================================*/
+
+#masthead {
+    padding:120px 0 0 0;
+}
+
+
+/*===========================================================================================
+
+								Media Queries
+
+=============================================================================================*/
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media (min-width : 320px) and (max-width : 480px) {
+@import 'smartphones-portrait-and-landscape';
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media (min-width : 321px) {
+@import 'smartphones-landscape';
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media (max-width : 320px) {
+@import 'smartphones-portrait';
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media (min-width : 768px) and (max-width : 1024px) {
+@import 'iPads-portrait-and-landscape';
+}
+ 
+/* iPads (landscape) ----------- */
+@media (min-width : 768px) and (max-width : 1024px) {
+@import 'iPads-landscape';
+}
+ 
+/* iPads (portrait) ----------- */
+@media (min-width : 768px) and (max-width : 1024px) {
+@import 'iPads-portrait';
+}
+ 
+/* Desktops and laptops ----------- */
+@media (min-width : 1224px) {
+@import 'desktops-and-laptops';
+}
+ 
+/* Large screens ----------- */
+@media (min-width : 1824px) {
+@import 'large-screens';
+}
+ 
+/* iPhone ----------- */
+@media
+(-webkit-min-device-pixel-ratio : 1.5),
+(min-device-pixel-ratio : 1.5) {
+@import 'iPhone';
+}
+
+/*===========================================================================================
+
+								Animate
+
+=============================================================================================*/
+
+@import 'animate';
+
+
+/*===========================================================================================
+
+								Fixes
+
+=============================================================================================*/
+
+
+@import 'fixes';
